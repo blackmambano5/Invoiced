@@ -10,8 +10,13 @@ use conceptCore\invoiced\Invoice as Invoice;
 class Core
 {
 
-	public function setInvoice($invoiceItems, $templateItems = false) {
-		
+	/**
+	 * set the invoice.
+	 * @param array  $invoiceItems  list with items that are needed for invoice
+	 * @param array $templateItems if array not empty change template items
+	 */
+	public function setInvoice($invoiceItems, $templateItems = array) {
+
 	}
 
 	public function generate() {
