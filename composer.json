@@ -11,11 +11,13 @@
 	"minimum-stability": "dev",
 	"require": {},
 	"require-dev": {
-		"guzzlehttp/guzzle": "dev-master"
+		"guzzlehttp/guzzle": "dev-master",
+		"wixel/gump": "dev-master",
+		"nesbot/carbon": "dev-master"
 		},
 		"autoload": {
 			"psr-4": {
-				"ConceptCore\\invoiced\\": "src"
+				"ConceptCore\\": "app/ConceptCore"
 			}
 		}
 	}
