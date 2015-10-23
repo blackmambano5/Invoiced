@@ -1,5 +1,5 @@
 {
-	"name": "conceptCore/invoiced",
+	"name": "concept-core/invoiced",
 	"description": "A PHP class to use https://invoice-generator.com API.",
 	"license": "MIT",
 	"authors": [

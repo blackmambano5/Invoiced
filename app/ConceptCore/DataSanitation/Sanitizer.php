@@ -1,4 +1,4 @@
-<?php namespace conceptcore\DataSanitation;
+<?php namespace ConceptCore\DataSanitation;
 
 /**
 * Sanitizer class for invoice input.

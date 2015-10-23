@@ -1,5 +1,5 @@
-<?php namespace conceptcore\Invoiced;
-use conceptcore\DataSanitation\Sanitizer;
+<?php namespace ConceptCore\Invoiced;
+use ConceptCore\DataSanitation\Sanitizer;
 use GuzzleHttp\Client;
 
 /**

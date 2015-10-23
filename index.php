@@ -1,5 +1,5 @@
 <?php
-use conceptcore\Invoiced\Core;
+use ConceptCore\Invoiced\Core;
 use Carbon\Carbon;
 require 'app/app.php';
 
