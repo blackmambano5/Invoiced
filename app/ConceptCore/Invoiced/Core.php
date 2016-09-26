@@ -12,7 +12,7 @@ class Core
 	 * Sanitizer object variable
 	 * @var variable/object
 	 */
-	public $s;
+	private $s;
 
 	/**
 	 * call the init function
@@ -56,11 +56,12 @@ class Core
 		 */
 		$client = new Client([
 			'base_uri'=>'https://invoice-generator.com',
-			]);
+			'verify'=> false
+		]);
 
 		$response = $client->request('POST', 'https://invoice-generator.com', [
 			'form_params'=>$invoiceData
-			]);
+		]);
 
 
 		if($directDownload == true) {

@@ -6,7 +6,7 @@
 class Sanitizer
 {
 
-	public $g;
+	private $g;
 
 	/**
 	 * start the init function

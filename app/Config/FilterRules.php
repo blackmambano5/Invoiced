@@ -9,4 +9,4 @@ return array(
 	"to" => "trim", 
 	"payment_terms" => "trim",
 	"tax"=> "whole_number",
-	);
+);

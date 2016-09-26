@@ -17,4 +17,4 @@ return array(
 	"shipping"=> "integer",
 	"amount_paid" => "integer",
 	"terms" => "required"
-	);
+);

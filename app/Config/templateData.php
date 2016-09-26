@@ -26,4 +26,4 @@ return array(
 	"terms_title" =>				"Terms",
 	"notes_title" =>				"Notes",
 	"currency" => 					"EUR",
-	);
+);
