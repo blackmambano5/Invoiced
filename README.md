@@ -1,6 +1,4 @@
-<<<<<<< HEAD
-Invoiced class
-==================
+# Invoiced class
 For those times when you just need an invoice.
 
 About
@@ -11,9 +9,5 @@ We are using the API from [https://invoice-generator.com](https://invoice-genera
 ### Rate limited
 The API is rate limited, however, it should be sufficient for a reasonable amount of testing and use. If you plan to use this in production at high volumes then let's talk at hello@invoiced.com.
 
-Examples
-------------------
-=======
 # Invoiced
 concept-core invoiced is a class used to generate and download pdf invoices using the https://invoice-generator.com api.
->>>>>>> fc714771d3784bb00639783065cc6a5c75bdc0a5
