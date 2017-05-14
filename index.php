@@ -3,6 +3,8 @@ use ConceptCore\Invoiced\Core;
 use Carbon\Carbon;
 require 'app/app.php';
 
+// Some random test
+
 /**
  * setup the core object
  * @var Core
