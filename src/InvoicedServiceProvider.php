@@ -2,14 +2,16 @@
 
 namespace ConceptCore\Invoiced;
 
+use ConceptCore\Interfaces\Objects\Core\TransferObjectInterface;
+use ConceptCore\Objects\Core\TransferObject;
 use League\Container\ServiceProvider\AbstractServiceProvider;
 
 class InvoicedServiceProvider extends AbstractServiceProvider
 {
-    public function __construct()
-    {
-        var_dump($this->getContainer());
-    }
+    protected $provides = [
+        Core::class,
+        TransferObjectInterface::class => TransferObject::class,
+    ];
 
     /**
      * Use the register method to register items with the container via the
@@ -20,6 +22,12 @@ class InvoicedServiceProvider extends AbstractServiceProvider
      */
     public function register()
     {
-        $this->getContainer()->add(Core::class);
+        foreach ($this->provides as $implementation => $concrete) {
+            if (is_callable($implementation)) {
+                $this->getContainer()->add($implementation, $concrete);
+            } else {
+                $this->getContainer()->add($concrete);
+            }
+        }
     }
 }
